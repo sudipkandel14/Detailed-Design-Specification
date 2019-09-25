@@ -8,7 +8,30 @@ Android/IOS.
 
 \subsection{Layer Software Dependencies}
 We used React-Native as our frame work with the dependencies as:
-\begin{rand}"dependencies":\\ {
+\begin{rand}\\dependencies:\\ {
+    "expo": "34.0.1",\\
+    "expo-permissions": "6.0.0",\\
+    "native-base": "2.13.7",\\
+    "react": "16.8.3",\\
+    "react-native": 
+\end{rand}
+
+\subsection{UI Controller}
+
+\begin{figure}[h!]
+	\centering
+ 	\includegraphics[width=0.60\textwidth]{images/uicontroller.png}
+ \caption{Example subsystem description diagram}
+\end{figure}
+
+\subsubsection{Subsystem Hardware}
+Phone Screen for both input and output.
+
+\subsubsection{Subsystem Operating System}
+Android/IOS.
+
+\subsubsection{Subsystem Software Dependencies}
+\begin{rand}dependencies:\\ {
     "expo": "34.0.1",\\
     "expo-permissions": "6.0.0",\\
     "native-base": "2.13.7",\\
@@ -25,31 +48,211 @@ We used React-Native as our frame work with the dependencies as:
     "reinput": "3.7.1"]\\
 \end{rand}
 
-\subsection{Subsystem 1}
-Descibe at a high level the purpose and basic design of this subsystem. Is it a piece of hardware, a class, a web service, or something else? Note that each of the subsystem items below are meant to be specific to that subystem and not a repeat of anything discussed above for the overall layer.
+\subsubsection{Subsystem Programming Languages}
+JavaScript
+
+\subsubsection{Subsystem Data Structures}
+All types of data are transmitted as linked list or array or Union types.
+
+\subsubsection{Subsystem Data Processing}
+Our application uses sorting algorithm to sort items in the database, and authenticate using database.
+\\
+\\
+\subsection{Login}
+
 
 \begin{figure}[h!]
 	\centering
- 	\includegraphics[width=0.60\textwidth]{images/subsystem}
- \caption{Example subsystem description diagram}
+ 	\includegraphics[width=0.60\textwidth]{images/login}
+ \caption{Login description diagram}
 \end{figure}
 
 \subsubsection{Subsystem Hardware}
-A description of any involved hardware components for the subsystem.
+Phone Screen for both input and output.
 
 \subsubsection{Subsystem Operating System}
-A description of any operating systems required by the subsystem.
+Android/IOS.
 
 \subsubsection{Subsystem Software Dependencies}
-A description of any software dependencies (libraries, frameworks, design software for mechanical parts or circuits, etc) required by the subsystem.
+\begin{rand}dependencies:\\ {
+    "expo": "34.0.1",\\
+    "expo-permissions": "6.0.0",\\
+    "native-base": "2.13.7",\\
+    "react": "16.8.3",\\
+     "firebase": "^6.6.0",\\
+    "react-native": 
+    "react-native-web": "0.11.4",\\
+    "react-navigation": "4.0.0",\\
+    "reinput": "3.7.1"]\\
+\end{rand}
 
 \subsubsection{Subsystem Programming Languages}
-A description of any programming languages used by the subsystem.
+JavaScript
 
 \subsubsection{Subsystem Data Structures}
-A description of any classes or other data structures that are worth discussing for the subsystem. For example, data being transmitted from a microcontroller to a PC via USB should be first be assembled into packets. What is the structure of the packets?
+All types of data are transmitted as linked list.
 
 \subsubsection{Subsystem Data Processing}
-A description of any algorithms or processing strategies that are worth discussing for the subsystem. If you are implementing a well-known algorithm, list it. If it is something unique to this project, discuss it in greater detail.
+This layer uses user input for authenticating for valid user.
+\\
+\\
 
+\subsection{Register}
+
+
+\begin{figure}[h!]
+	\centering
+ 	\includegraphics[width=0.60\textwidth]{images/register}
+ \caption{Register description diagram}
+\end{figure}
+
+\subsubsection{Subsystem Hardware}
+Phone Screen for both input and output.
+
+\subsubsection{Subsystem Operating System}
+Android/IOS.
+
+\subsubsection{Subsystem Software Dependencies}
+\begin{rand}dependencies:\\ {
+    "expo": "34.0.1",\\
+    "expo-permissions": "6.0.0",\\
+    "native-base": "2.13.7",\\
+    "react": "16.8.3",\\
+     "firebase": "^6.6.0",\\
+    "react-native": 
+    "react-native-web": "0.11.4",\\
+    "react-navigation": "4.0.0",\\
+    "reinput": "3.7.1"]\\
+\end{rand}
+
+\subsubsection{Subsystem Programming Languages}
+JavaScript
+
+\subsubsection{Subsystem Data Structures}
+All types of data are transmitted as linked list.
+
+\subsubsection{Subsystem Data Processing}
+This layer uses user input for authenticating for valid user and add the new user to the database.
+\\
+\\
+
+\subsection{Add Shelf}
+
+
+\begin{figure}[h!]
+	\centering
+ 	\includegraphics[width=0.60\textwidth]{images/addshelf}
+
+ \caption{Adding Shelf description diagram}
+
+\end{figure}
+
+\subsubsection{Subsystem Hardware}
+Phone Screen for both input and output.
+
+\subsubsection{Subsystem Operating System}
+Android/IOS.
+
+\subsubsection{Subsystem Software Dependencies}
+\begin{rand}dependencies:\\ {
+    "expo": "34.0.1",\\
+    "expo-permissions": "6.0.0",\\
+    "native-base": "2.13.7",\\
+    "react": "16.8.3",\\
+     "firebase": "^6.6.0",\\
+    "react-native": 
+    "react-native-web": "0.11.4",\\
+    "react-navigation": "4.0.0",\\
+    "reinput": "3.7.1"]\\
+\end{rand}
+
+\subsubsection{Subsystem Programming Languages}
+JavaScript
+
+\subsubsection{Subsystem Data Structures}
+All types of data are transmitted as linked list, array, union.
+
+\subsubsection{Subsystem Data Processing}
+This layer uses allow valid user to add new user entry to database.
+\\
+\\
+\subsection{Add Item}
+Add Item allows the user to add the items with the description of its different attributes. Attributes like name of product, brand name, manufacture date, best by date and size of product.
+
+
+\begin{figure}[h!]
+	\centering
+ 	\includegraphics[width=0.60\textwidth]{images/additem}
+
+ \caption{Adding items description diagram}
+
+\end{figure}
+
+\subsubsection{Subsystem Hardware}
+Phone Screen for both input and output.
+
+\subsubsection{Subsystem Operating System}
+Android/IOS.
+
+\subsubsection{Subsystem Software Dependencies}
+\begin{rand}dependencies:\\ {
+    "expo": "34.0.1",\\
+    "expo-permissions": "6.0.0",\\
+    "native-base": "2.13.7",\\
+    "react": "16.8.3",\\
+     "firebase": "^6.6.0",\\
+    "react-native": 
+    "react-native-web": "0.11.4",\\
+    "react-navigation": "4.0.0",\\
+    "reinput": "3.7.1"]\\
+\end{rand}
+
+\subsubsection{Subsystem Programming Languages}
+JavaScript
+
+\subsubsection{Subsystem Data Structures}
+All types of data are transmitted as linked list, array, union.
+
+\subsubsection{Subsystem Data Processing}
+This layer uses allow valid user to add new user entry to database.
+\\
+\\
+\subsection{Search}
+
+
+\begin{figure}[h!]
+	\centering
+ 	\includegraphics[width=0.60\textwidth]{images/search}
+ \caption{searching item description diagram}
+\end{figure}
+
+\subsubsection{Subsystem Hardware}
+Phone Screen for both input and output.
+
+\subsubsection{Subsystem Operating System}
+Android/IOS.
+
+\subsubsection{Subsystem Software Dependencies}
+\begin{rand}dependencies:\\ {
+    "expo": "34.0.1",\\
+    "expo-permissions": "6.0.0",\\
+    "native-base": "2.13.7",\\
+    "react": "16.8.3",\\
+     "firebase": "^6.6.0",\\
+    "react-native": 
+    "react-native-web": "0.11.4",\\
+    "react-navigation": "4.0.0",\\
+    "reinput": "3.7.1"]\\
+\end{rand}
+
+\subsubsection{Subsystem Programming Languages}
+JavaScript
+
+\subsubsection{Subsystem Data Structures}
+All types of data are transmitted as linked list, array, union.
+
+\subsubsection{Subsystem Data Processing}
+This layer uses allow valid user to search item in their database.
+\\
+\\
 
