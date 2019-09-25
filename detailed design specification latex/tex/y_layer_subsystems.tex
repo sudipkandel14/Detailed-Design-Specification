@@ -52,7 +52,7 @@ JavaScript
 JSON, Array, Union, List.
 
 \subsubsection{Business Controller Data Processing}
-Shorting Algorithm was used.
+Sorting Algorithm was used.
 
 \subsection{AR Generator}
 AR generator is the part of Business logic that generates AR when a customer wants to store an item to the shelf. The generated AR is then used when the customer wants to search the item. When the customer wants to search an item, he will scan bar-code or enter manually. Then the program will display the AR right on the bar-code of the item.
@@ -78,7 +78,7 @@ JavaScript
 JSON, Array, Union, List.
 
 \subsubsection{AR Generator Data Processing}
-Shorting Algorithm was used.
+QR images is used to look up the item in the logged in user's database.
 
 
 \subsection{QR Generator}
@@ -105,7 +105,8 @@ JavaScript
 \subsubsection{QR Generator Data Structures}
 JSON, Array, Union, List.
 
-
+\subsubsection{QR Generator Data Processing}
+It user user info and item description to create QR for the record and save it to database.
 
 \subsection{UI Input Validation}
 This section will validate format and types of input from users. It will reject the inputs if user's input is wrong format and suggest the correct format of the input.Provide guidance on how to fix any errors, don't just tell users what they did wrong. It will prevent from unauthorized SQL injection into the data base.
@@ -143,3 +144,7 @@ JavaScript
 
 \subsubsection{Input Validation Data Structures}
 JSON, Array, Union, List.
+
+
+\subsubsection{Input Validation Data Processing}
+It user user info and item description for validation to prevent SQL injection.
