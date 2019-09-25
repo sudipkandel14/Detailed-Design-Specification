@@ -32,52 +32,52 @@ Any kind of data coming and going to Business Logic do so through the Business c
 
 \begin{figure}[h!]
 	\centering
- 	\includegraphics[width=0.60\textwidth]{images/subsystem}
+ 	\includegraphics[width=0.60\textwidth]{images/businesscontroller}
  \caption{Example subsystem description diagram}
 \end{figure}
 
 \subsubsection{Subsystem Hardware}
 NA
 
-\subsubsection{Subsystem Operating System}
+\subsubsection{Business Controller Operating system}
 iOS/Andriod
 
-\subsubsection{Subsystem Software Dependencies}
+\subsubsection{Business Controller Software Dependencies}
 A description of any software dependencies (libraries, frameworks, design software for mechanical parts or circuits, etc) required by the subsystem.
 
-\subsubsection{Subsystem Programming Languages}
+\subsubsection{Business Controller Programming Languages}
 JavaScript
 
 \subsubsection{Subsystem Data Structures}
 JSON, Array, Union, List.
 
-\subsubsection{Subsystem Data Processing}
+\subsubsection{Business Controller Data Processing}
 Shorting Algorithm was used.
 
 \subsection{AR Generator}
 AR generator is the part of Business logic that generates AR when a customer wants to store an item to the shelf. The generated AR is then used when the customer wants to search the item. When the customer wants to search an item, he will scan bar-code or enter manually. Then the program will display the AR right on the bar-code of the item.
 \begin{figure}[h!]
 	\centering
- 	\includegraphics[width=0.60\textwidth]{images/subsystem}
- \caption{Example subsystem description diagram}
+ 	\includegraphics[width=0.60\textwidth]{images/argenerator}
+ \caption{AR Generator}
 \end{figure}
 
-\subsubsection{Subsystem Hardware}
+\subsubsection{AR Generator Hardware}
 Phone Camera
 
-\subsubsection{Subsystem Operating System}
+\subsubsection{AR Generator Operating System}
 iOS/Andriod
 
-\subsubsection{Subsystem Software Dependencies}
+\subsubsection{AR Generator Software Dependencies}
 Phone camera, images available
 
-\subsubsection{Subsystem Programming Languages}
+\subsubsection{AR Generator Programming Languages}
 JavaScript
 
-\subsubsection{Subsystem Data Structures}
+\subsubsection{AR Generator Data Structures}
 JSON, Array, Union, List.
 
-\subsubsection{Subsystem Data Processing}
+\subsubsection{AR Generator Data Processing}
 Shorting Algorithm was used.
 
 
@@ -86,47 +86,60 @@ Based on description of the item customer provides, QR generator generate QR.Thi
 
 \begin{figure}[h!]
 	\centering
- 	\includegraphics[width=0.60\textwidth]{images/subsystem}
- \caption{Example subsystem description diagram}
+ 	\includegraphics[width=0.60\textwidth]{images/qrgenerator}
+ \caption{QR Generator}
 \end{figure}
 
-\subsubsection{Subsystem Hardware}
+\subsubsection{QR Generator Hardware}
 Phone Camera
 
-\subsubsection{Subsystem Operating System}
+\subsubsection{QR Generator Operating System}
 iOS/Andriod
 
-\subsubsection{Subsystem Software Dependencies}
+\subsubsection{QR Generator Software Dependencies}
 Phone camera
 
-\subsubsection{Subsystem Programming Languages}
+\subsubsection{QR Generator Programming Languages}
 JavaScript
 
-\subsubsection{Subsystem Data Structures}
+\subsubsection{QR Generator Data Structures}
 JSON, Array, Union, List.
 
 
 
 \subsection{UI Input Validation}
-This section will validate format and types of input from user. It will reject the inputs if user's input is wrong format and suggest the correct format of the input.Provide guidance on how to fix any errors, don't just tell users what they did wrong. It will prevent from unauthorized SQL injection into the data base.
+This section will validate format and types of input from users. It will reject the inputs if user's input is wrong format and suggest the correct format of the input.Provide guidance on how to fix any errors, don't just tell users what they did wrong. It will prevent from unauthorized SQL injection into the data base.
 
 \begin{figure}[h!]
 	\centering
- 	\includegraphics[width=0.60\textwidth]{images/subsystem}
- \caption{Example subsystem description diagram}
+ 	\includegraphics[width=0.60\textwidth]{images/uivalidation}
+ \caption{UI Validation}
 \end{figure}
 
-\subsubsection{Subsystem Hardware}
+\subsubsection{Input Validation Hardware}
 N/A
 
-\subsubsection{Subsystem Operating System}
-iOS/Andriod
+\subsubsection{Input Validation Operating System}
+iOS/Android
 
-\subsubsection{Subsystem Software Dependencies}
-Phone camera
+\subsubsection{Input Validation Software Dependencies}
 
-\subsubsection{Subsystem Programming Languages}
+
+\begin{rand}"dependencies":\\ {
+    "expo": "34.0.1",\\
+    "expo-barcode-scanner": "6.0.0",\\
+    "expo-permissions": "6.0.0",\\
+    "react": "16.8.3",\\
+    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",\\
+    "react-native-datepicker": "1.7.2",\\
+    "react-native-simple-radio-button": "2.7.3",\\
+    "react-native-vector-icons": "6.6.0",\\
+    "react-navigation-stack": "1.5.1",\\
+    "reinput": "3.7.1"]\\
+\end{rand}
+
+\subsubsection{Input Validation Programming Languages}
 JavaScript
 
-\subsubsection{Subsystem Data Structures}
+\subsubsection{Input Validation Data Structures}
 JSON, Array, Union, List.
