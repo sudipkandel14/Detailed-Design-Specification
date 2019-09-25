@@ -119,3 +119,71 @@ JSON, Array, Objects
 Depending upon the data provided by the user, data will be sent to the subsystem ie. Register\_mgt. Register\_mgt will then validate the user if the username and password is correct. 
 This will return a boolean result if the user is authorized or not.
 
+\subsection{Item mgt}
+This subsystem of the database is used whenever user wants to add or remove item from the database. When user provides the data for adding or removing the item, then the DB controller takes the input at first and then passes it to the item Mgmt. Then the layer takes the input value and make necessary change ie. add or remove the item accordingly.
+
+\begin{figure}[h!]
+	\centering
+ 	\includegraphics[width=0.60\textwidth]{images/itemmgt}
+ \caption{Item mgt description diagram}
+\end{figure}
+
+\subsubsection{Item Mgt Hardware}
+Internal Memory
+
+\subsubsection{Item Mgt Operating System}
+IOS/Android
+
+\subsubsection{Item Mgt Software Dependencies}
+\begin{rand}"dependencies":\\ {
+    "expo": "34.0.1",\\
+    "expo-permissions": "6.0.0",\\
+    "firebase": "6.6.0",\\
+    "react": "16.8.3",\\ "react-native-gesture-handler": "1.4.1",\\
+    "react-navigation-stack": "1.5.1",\\
+    "reinput": "3.7.1"]\\
+\end{rand}
+
+\subsubsection{Item Mgt Programming Languages}
+JavaScript
+
+\subsubsection{Item Mgt Data Structures}
+JSON, Array, Objects
+
+\subsubsection{Item Mgt Data Processing}
+Depending upon the data provided by the user, data will stored in the logged in user's database.
+
+\subsection{Search mgt}
+This Sub System deals with taking the item description from user and it searches for the item. Variety of options are provided for searching the item. User can use the camera in the cellphone to scan the QR generated for the specific item or users will also be able to search the item by their names.
+
+\begin{figure}[h!]
+	\centering
+ 	\includegraphics[width=0.60\textwidth]{images/searchmgt}
+ \caption{Search mgt description diagram}
+\end{figure}
+
+\subsubsection{Search Mgt Hardware}
+Phone display
+
+\subsubsection{Search Mgt Operating System}
+IOS/Android
+
+\subsubsection{Search Mgt Software Dependencies}
+\begin{rand}"dependencies":\\ {
+    "expo": "34.0.1",\\
+    "expo-permissions": "6.0.0",\\
+    "firebase": "6.6.0",\\
+    "react": "16.8.3",\\ "react-native-gesture-handler": "1.4.1",\\
+    "react-navigation-stack": "1.5.1",\\
+    "reinput": "3.7.1"]\\
+\end{rand}
+
+\subsubsection{Search Mgt Programming Languages}
+JavaScript
+
+\subsubsection{Search Mgt Data Structures}
+ Array, Objects, Union
+
+\subsubsection{Search Mgt Data Processing}
+Depending upon the data provided by the user, data will be retrieved from logged in user's database.
+
