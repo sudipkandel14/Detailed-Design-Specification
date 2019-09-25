@@ -7,33 +7,115 @@ N/A
 IOS/Android
 
 \subsection{Layer Software Dependencies}
+Firebase, Internal Memory,
 
 
-\subsection{Subsystem 1}
-Describe at a high level the purpose and basic design of this subsystem. Is it a piece of hardware, a class, a web service, or something else? Note that each of the subsystem items below are meant to be specific to that subsytem and not a repeat of anything discussed above for the overall layer.
+\subsection{DB Controller}
+This is a type of main controller of the Database system. All the data that needs to be stored in database is first handled by this layer and later stored in the database. When any of the other layer send data to the database layer, first database layer takes the information and figures out what type of data is provided and what to do with the given data.
 
 \begin{figure}[h!]
 	\centering
- 	\includegraphics[width=0.60\textwidth]{images/subsystem}
- \caption{Example subsystem description diagram}
+ 	\includegraphics[width=0.60\textwidth]{images/dbcontroller}
+ \caption{DB Controller description diagram}
 \end{figure}
 
-\subsubsection{Subsystem Hardware}
-A description of any involved hardware components for the subsystem.
+\subsubsection{DB Controller Hardware}
+Internal Memory
 
-\subsubsection{Subsystem Operating System}
-A description of any operating systems required by the subsystem.
+\subsubsection{DB Controller Operating System}
+iOS/Android
 
-\subsubsection{Subsystem Software Dependencies}
-A description of any software dependencies (libraries, frameworks, design software for mechanical parts or circuits, etc) required by the subsystem.
+\subsubsection{DB Controller Software Dependencies}
+\begin{rand}"dependencies":\\ {
+    "expo": "34.0.1",\\    \
+    "expo-permissions": "6.0.0",\\
+    "firebase": "6.6.0",\\
+    "react": "16.8.3",\\
+    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",\\
+    "react-navigation-stack": "1.5.1",\\
+\end{rand}
 
-\subsubsection{Subsystem Programming Languages}
-A description of any programming languages used by the subsystem.
+\subsubsection{DB Controller Programming Languages}
+JavaScript
 
-\subsubsection{Subsystem Data Structures}
-A description of any classes or other data structures that are worth discussing for the subsystem. For example, data being transmitted from a microcontroller to a PC via USB should be first be assembled into packets. What is the structure of the packets?
+\subsubsection{DB Controller Data Structures}
+JSON, Array, Objects
 
-\subsubsection{Subsystem Data Processing}
-A description of any algorithms or processing strategies that are worth discussing for the subsystem. If you are implementing a well-known algorithm, list it. If it is something unique to this project, discuss it in greater detail.
+\subsubsection{DB Controller Data Processing}
+Depending upon the data provided by the user, data will be sent to the subsystems of database ie. login\_mgt, Reg\_mgt, Shelf\_mgt, Item\_mgt, Search\_mgt.
+According to the query of the user database willthe subsystems ie. login\_mgt, Reg\_mgt, Shelf\_mgt, Item\_mgt, Search\_mgt and help user in validation of user and fetching of data.
 
+
+\subsection{Login Mgt}
+This subsection of database just deals with the login information. User first registers for the account in the mobile application. Then when he wants to use the app he will provide the user name and password for the app. Then the login management layer handles all the data. It checks if the user name and password provided by the user exists in database or not. It should allow user to login if the combination of user name and password exists else it should deny user from using the application itself.
+
+\begin{figure}[h!]
+	\centering
+ 	\includegraphics[width=0.60\textwidth]{images/loginmgt}
+ \caption{Login mgt description diagram}
+\end{figure}
+
+\subsubsection{Login Mgt Hardware}
+Internal Memory
+
+\subsubsection{Login Mgt Operating System}
+iOS/Android
+
+\subsubsection{Login Mgt Software Dependencies}
+\begin{rand}"dependencies":\\ {
+    "expo": "34.0.1",\\
+    "expo-permissions": "6.0.0",\\
+    "firebase": "6.6.0",\\
+    "react": "16.8.3",\\ "react-native-gesture-handler": "1.4.1",\\
+    "react-navigation-stack": "1.5.1",\\
+    "reinput": "3.7.1"]\\
+\end{rand}
+
+\subsubsection{Login Mgt Programming Languages}
+JavaScript
+
+\subsubsection{Login Mgt Data Structures}
+JSON, Array, Objects
+
+\subsubsection{Login Mgt Data Processing}
+Depending upon the data provided by the user, data will be sent to the subsystem ie. login\_mgt. Login\_mgt will then validate the user if the username and password is correct. 
+This will return a boolean result if the user is authorized or not.
+
+
+
+\subsection{Register Mgt}
+This subsection of the database deals with registration data like first name, last name, DOB,etc. When user provides the information it is validated for SQL injection and passed into the register management. Then the data is stored in database in organized manner by the register management subsystem.
+
+\begin{figure}[h!]
+	\centering
+ 	\includegraphics[width=0.60\textwidth]{images/regmgt}
+ \caption{Register mgt description diagram}
+\end{figure}
+
+
+\subsubsection{Register Mgt Hardware}
+Internal Memory
+
+\subsubsection{Register Mgt Operating System}
+iOS/Android
+
+\subsubsection{Register Mgt Software Dependencies}
+\begin{rand}"dependencies":\\ {
+    "expo": "34.0.1",\\
+    "expo-permissions": "6.0.0",\\
+    "firebase": "6.6.0",\\
+    "react": "16.8.3",\\ "react-native-gesture-handler": "1.4.1",\\
+    "react-navigation-stack": "1.5.1",\\
+    "reinput": "3.7.1"]\\
+\end{rand}
+
+\subsubsection{Register Mgt Programming Languages}
+JavaScript
+
+\subsubsection{Register Mgt Data Structures}
+JSON, Array, Objects
+
+\subsubsection{Register Mgt Data Processing}
+Depending upon the data provided by the user, data will be sent to the subsystem ie. Register\_mgt. Register\_mgt will then validate the user if the username and password is correct. 
+This will return a boolean result if the user is authorized or not.
 
