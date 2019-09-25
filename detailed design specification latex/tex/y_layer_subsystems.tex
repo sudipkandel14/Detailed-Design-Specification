@@ -1,4 +1,4 @@
-In this section, the layer is described in terms of the hardware and software design. Specific implementation details, such as hardware components, programming languages, software dependencies, operating systems, etc. should be discussed. Any unnecessary items can be ommitted (for example, a pure software module without any specific hardware should not include a hardware subsection). The organization, titles, and content of the sections below can be modified as necessary for the project.
+This is another important layer in our design. This part of the system works as a bridge between the User Interface and the Database of the system. If the data is being received from the UI controller that are coming form different subsections of UI, the Business controller will, depending upon what kind of input it gets, either generate an AR, generate a Qr or does an input validation. The Business Logic will send the data to the data base for more validation and verification or to store the data in database. If Business Logic is getting the instruction to fetch data form Database, then it will contact Database to get particular data, which is then passed on to the UI.
 
 \subsection{Layer Hardware}
 A description of any involved hardware components for the layer. For example, if each subsystem is a software process running on an embedded computer, discuss the specifics of that device here. Do not list a hardware component that only exists at the subsystem level (include it in the following sections).
@@ -7,8 +7,26 @@ A description of any involved hardware components for the layer. For example, if
 A description of any operating systems required by the layer.
 
 \subsection{Layer Software Dependencies}
-A description of any software dependencies (libraries, frameworks, etc) required by the layer.
-
+This layer is build using ReactNative. Dependencies we needed for this part are
+\begin{rand}"dependencies":\\ {
+    "expo": "34.0.1",\\
+    "expo-barcode-scanner": "6.0.0",\\
+    "expo-permissions": "6.0.0",\\
+    "firebase": "6.6.0",\\
+    "native-base": "2.13.7",\\
+    "react": "16.8.3",\\
+    "react-dom": "16.8.6",\\
+    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",\\
+    "react-native-datepicker": "1.7.2",\\
+    "react-native-gesture-handler": "1.4.1",\\
+    "react-native-search-bar": "3.4.3",\\
+    "react-native-simple-radio-button": "2.7.3",\\
+    "react-native-vector-icons": "6.6.0",\\
+    "react-native-web": "0.11.4",\\
+    "react-navigation": "4.0.0",\\
+    "react-navigation-stack": "1.5.1",\\
+    "reinput": "3.7.1"]\\
+\end{rand}
 \subsection{Subsystem 1}
 Descibe at a high level the purpose and basic design of this subsystem. Is it a piece of hardware, a class, a web service, or something else? Note that each of the subsystem items below are meant to be specific to that subystem and not a repeat of anything discussed above for the overall layer.
 
