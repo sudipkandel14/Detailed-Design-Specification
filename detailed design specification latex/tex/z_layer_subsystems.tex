@@ -104,8 +104,10 @@ iOS/Android
     "expo": "34.0.1",\\
     "expo-permissions": "6.0.0",\\
     "firebase": "6.6.0",\\
-    "react": "16.8.3",\\ "react-native-gesture-handler": "1.4.1",\\
-    "react-navigation-stack": "1.5.1",\\
+    "react": "16.8.3",\\
+    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",\\
+    "react-native-datepicker": "1.7.2",\\
+    "react-native-gesture-handler": "1.4.1",\\ "react-navigation-stack": "1.5.1",\\
     "reinput": "3.7.1"]\\
 \end{rand}
 
@@ -116,8 +118,44 @@ JavaScript
 JSON, Array, Objects
 
 \subsubsection{Register Mgt Data Processing}
-Depending upon the data provided by the user, data will be sent to the subsystem ie. Register\_mgt. Register\_mgt will then validate the user if the username and password is correct. 
-This will return a boolean result if the user is authorized or not.
+Depending upon the data provided by the user, data will be sent to the subsystem ie. Register\_mgt. Register\_mgt will then create a separate user in database. This user will have its name, password, date of birth, email. These data can be accessed during sign in by login_mgt for validation. 
+
+
+
+\subsection{Shelf mgt}
+This subsystem of database is used whenever user wants to add or remove self. When user provides the specification for the self then the database controller takes the data and passes it to the self management layer. Then the layer takes the information and makes the necessary adjustment in the database.
+\begin{figure}[h!]
+	\centering
+ 	\includegraphics[width=0.60\textwidth]{images/shelfmgt}
+ \caption{Shelf mgt description diagram}
+\end{figure}
+
+\subsubsection{Shelf Mgt Hardware}
+NA
+
+\subsubsection{Shelf Mgt Operating System}
+iOS/Android
+
+\subsubsection{Shelf Mgt Software Dependencies}
+\begin{rand}"dependencies":\\ {
+    "expo": "34.0.1",\\
+    "expo-permissions": "6.0.0",\\
+    "firebase": "6.6.0",\\
+    "react": "16.8.3",\\
+    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",\\
+    "react-native-datepicker": "1.7.2",\\
+    "react-native-gesture-handler": "1.4.1",\\ "react-navigation-stack": "1.5.1",\\
+    "reinput": "3.7.1"]\\
+\end{rand}
+
+\subsubsection{Shelf Mgt Programming Languages}
+JavaScript
+
+\subsubsection{Shelf Mgt Data Structures}
+JSON, Array
+
+\subsubsection{Shelf Mgt Data Processing}
+Depending upon the data provided by the user, data will be sent to the subsystem ie. Shelf\_mgt. Shelf\_mgt will then create a shelf with given number of rows and columns. This created shelf will be accessed when user access items in the self or when he adds items in the shelf. 
 
 \subsection{Item mgt}
 This subsystem of the database is used whenever user wants to add or remove item from the database. When user provides the data for adding or removing the item, then the DB controller takes the input at first and then passes it to the item Mgmt. Then the layer takes the input value and make necessary change ie. add or remove the item accordingly.
@@ -133,62 +171,6 @@ Internal Memory
 
 \subsubsection{Item Mgt Operating System}
 IOS/Android
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 \subsubsection{Item Mgt Software Dependencies}
