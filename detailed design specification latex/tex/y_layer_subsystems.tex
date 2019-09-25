@@ -4,7 +4,7 @@ This is another important layer in our design. This part of the system works as 
 A description of any involved hardware components for the layer. For example, if each subsystem is a software process running on an embedded computer, discuss the specifics of that device here. Do not list a hardware component that only exists at the subsystem level (include it in the following sections).
 
 \subsection{Layer Operating System}
-A description of any operating systems required by the layer.
+iOS/Android
 
 \subsection{Layer Software Dependencies}
 This layer is build using ReactNative. Dependencies we needed for this part are
@@ -27,8 +27,8 @@ This layer is build using ReactNative. Dependencies we needed for this part are
     "react-navigation-stack": "1.5.1",\\
     "reinput": "3.7.1"]\\
 \end{rand}
-\subsection{Subsystem 1}
-Descibe at a high level the purpose and basic design of this subsystem. Is it a piece of hardware, a class, a web service, or something else? Note that each of the subsystem items below are meant to be specific to that subystem and not a repeat of anything discussed above for the overall layer.
+\subsection{Business Controller}
+Any kind of data coming and going to Business Logic do so through the Business controller. The data coming to Business Logic will be divided into three different ways, namely AR generation, QR generation or Input Validation related. Depending upon those different input types, Business controller communicates with the Database controller to get particular data or to store that information.
 
 \begin{figure}[h!]
 	\centering
@@ -37,21 +37,96 @@ Descibe at a high level the purpose and basic design of this subsystem. Is it a 
 \end{figure}
 
 \subsubsection{Subsystem Hardware}
-A description of any involved hardware components for the subsystem.
+NA
 
 \subsubsection{Subsystem Operating System}
-A description of any operating systems required by the subsystem.
+iOS/Andriod
 
 \subsubsection{Subsystem Software Dependencies}
 A description of any software dependencies (libraries, frameworks, design software for mechanical parts or circuits, etc) required by the subsystem.
 
 \subsubsection{Subsystem Programming Languages}
-A description of any programming languages used by the subsystem.
+JavaScript
 
 \subsubsection{Subsystem Data Structures}
-A description of any classes or other data structures that are worth discussing for the subsystem. For example, data being transmitted from a microcontroller to a PC via USB should be first be assembled into packets. What is the structure of the packets?
+JSON, Array, Union, List.
 
 \subsubsection{Subsystem Data Processing}
-A description of any algorithms or processing strategies that are worth discussing for the subsystem. If you are implementing a well-known algorithm, list it. If it is something unique to this project, discuss it in greater detail.
+Shorting Algorithm was used.
+
+\subsection{AR Generator}
+AR generator is the part of Business logic that generates AR when a customer wants to store an item to the shelf. The generated AR is then used when the customer wants to search the item. When the customer wants to search an item, he will scan bar-code or enter manually. Then the program will display the AR right on the bar-code of the item.
+\begin{figure}[h!]
+	\centering
+ 	\includegraphics[width=0.60\textwidth]{images/subsystem}
+ \caption{Example subsystem description diagram}
+\end{figure}
+
+\subsubsection{Subsystem Hardware}
+Phone Camera
+
+\subsubsection{Subsystem Operating System}
+iOS/Andriod
+
+\subsubsection{Subsystem Software Dependencies}
+Phone camera, images available
+
+\subsubsection{Subsystem Programming Languages}
+JavaScript
+
+\subsubsection{Subsystem Data Structures}
+JSON, Array, Union, List.
+
+\subsubsection{Subsystem Data Processing}
+Shorting Algorithm was used.
 
 
+\subsection{QR Generator}
+Based on description of the item customer provides, QR generator generate QR.This QR is then store in the database along with the  description of the item.
+
+\begin{figure}[h!]
+	\centering
+ 	\includegraphics[width=0.60\textwidth]{images/subsystem}
+ \caption{Example subsystem description diagram}
+\end{figure}
+
+\subsubsection{Subsystem Hardware}
+Phone Camera
+
+\subsubsection{Subsystem Operating System}
+iOS/Andriod
+
+\subsubsection{Subsystem Software Dependencies}
+Phone camera
+
+\subsubsection{Subsystem Programming Languages}
+JavaScript
+
+\subsubsection{Subsystem Data Structures}
+JSON, Array, Union, List.
+
+
+
+\subsection{UI Input Validation}
+This section will validate format and types of input from user. It will reject the inputs if user's input is wrong format and suggest the correct format of the input.Provide guidance on how to fix any errors, don't just tell users what they did wrong. It will prevent from unauthorized SQL injection into the data base.
+
+\begin{figure}[h!]
+	\centering
+ 	\includegraphics[width=0.60\textwidth]{images/subsystem}
+ \caption{Example subsystem description diagram}
+\end{figure}
+
+\subsubsection{Subsystem Hardware}
+N/A
+
+\subsubsection{Subsystem Operating System}
+iOS/Andriod
+
+\subsubsection{Subsystem Software Dependencies}
+Phone camera
+
+\subsubsection{Subsystem Programming Languages}
+JavaScript
+
+\subsubsection{Subsystem Data Structures}
+JSON, Array, Union, List.
